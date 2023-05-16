@@ -3,7 +3,7 @@
 import errno
 import subprocess
 
-from distutils.core import setup, Extension
+from setuptools import setup, Extension
 
 libudev_so = "libudev.so.1"
 
