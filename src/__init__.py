@@ -87,7 +87,15 @@ def _error_handler(result, fn, args):
 def fdopen():
     return _libsuinput.suinput_open()
 
-_libsuinput_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "_libsuinput" + sysconfig.get_config_var("SO")))
+def get_libsuinput_path():
+    repo_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+    # python 2 / 3 compatibility ("SO" is now deprecated)
+    extension  = sysconfig.get_config_var("EXT_SUFFIX") or sysconfig.get_config_var("SO")
+    path = os.path.join(repo_dir, "_libsuinput" + extension)
+    return path
+
+
+_libsuinput_path = get_libsuinput_path()
 _libsuinput = ctypes.CDLL(_libsuinput_path, use_errno=True)
 _libsuinput.suinput_open.errcheck = _open_error_handler
 _libsuinput.suinput_enable_event.errcheck = _error_handler
