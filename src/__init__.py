@@ -36,7 +36,11 @@ from __future__ import absolute_import
 import ctypes
 import errno
 import os
-import distutils.sysconfig as sysconfig
+try:
+    import sysconfig
+except ImportError:
+    # python < 3.2
+    import distutils.sysconfig as sysconfig
 
 from .ev import *
 
