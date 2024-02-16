@@ -1,8 +1,8 @@
 ===============
- Python-uinput
+ Python-uinput2
 ===============
 
-Python-uinput is Python interface to Linux uinput kernel module which
+Python-uinput2 is Python interface to Linux uinput kernel module which
 allows attaching userspace device drivers into kernel. In practice,
 Python-uinput makes it dead simple to create virtual joysticks,
 keyboards and mice for generating arbitrary input events
@@ -10,6 +10,14 @@ programmatically.
 
 :Homepage: https://github.com/pyinput/python-uinput2
 :License: GPLv3+
+
+About python-uinput v2
+======================
+
+python-uinput2 is the intended successor to python-uinput.
+We've decided to fork the project after the original author become unresponsive for several years and PRs implementing modern python support were unmerged.
+
+The PyPI project and repository are now python-uinput2, but you should still `import uinput` in your python code.
 
 Usage examples
 ==============
