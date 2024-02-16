@@ -8,7 +8,7 @@ Python-uinput makes it dead simple to create virtual joysticks,
 keyboards and mice for generating arbitrary input events
 programmatically.
 
-:Homepage: http://tjjr.fi/sw/python-uinput/
+:Homepage: https://github.com/pyinput/python-uinput2
 :License: GPLv3+
 
 Usage examples
@@ -75,7 +75,7 @@ How to report bugs
 
 The bug database is hosted in GitHub. If you have found a bug or have an
 improvement idea you want to share, please report it at
-<https://github.com/tuomasjjrasanen/python-uinput/issues>. However, to avoid
+<https://github.com/pyinput/python-uinput2/issues>. However, to avoid
 duplicate bug reports, before reporting, please check if similar or identical
 bug has already been reported. If so, you can still subscribe to the existing
 bug to track its progress.
@@ -86,7 +86,7 @@ How to contribute
 In addition to reporting bugs and improvement suggestions, you are encouraged to
 contribute bug-fixes or features. The source code is maintained in Git and the
 main repository is hosted at GitHub,
-<https://github.com/tuomasjjrasanen/python-uinput/>. The preferred way to
+<https://github.com/pyinput/python-uinput2/>. The preferred way to
 contribute code is to clone the main Git repository and send a pull-request. Good
 old patches via email are also accepted.
 
