@@ -2,6 +2,13 @@
  Python-uinput NEWS -- history of user-visible changes
 =======================================================
 
+1.0
+===
+
+- Project repository moved to pyinput/python-uinput
+- Development Status: Stable
+- Python 3.12 support
+
 0.11.2
 ======
 
