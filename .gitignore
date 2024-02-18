@@ -1,5 +1,7 @@
 **/*.pyc
 **/*.swp
+**/*.egg-info/
 build/
+dist/
 _libsuinput.so
 

@@ -7,6 +7,7 @@
 
 - Project repository moved to pyinput/python-uinput
 - Development Status: Stable
+- Modern packaging (pyproject.toml)
 - Python 3.12 support
 
 0.11.2
