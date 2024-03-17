@@ -39,7 +39,7 @@ except:
     pass
 
 setup(name='python-uinput',
-      version='1.0.0',
+      version='1.0.1',
       description='Pythonic API to Linux uinput kernel module.',
       author='pyinput',
       url='https://github.com/pyinput/python-uinput',
