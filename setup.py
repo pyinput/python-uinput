@@ -6,7 +6,7 @@ import subprocess
 try:
     from setuptools import setup, Extension
 except ImportError:
-    from distutils import setup, Extension
+    from distutils.core import setup, Extension
 
 libudev_so = "libudev.so.1"
 

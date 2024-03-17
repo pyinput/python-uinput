@@ -19,3 +19,5 @@ class DeviceTest(unittest.TestCase):
             device.emit(uinput.REL_X, 1)
 
 
+if __name__ == "__main__":
+    unittest.main()
