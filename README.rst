@@ -1,23 +1,15 @@
-===============
- Python-uinput2
-===============
+==============
+ Python-uinput
+==============
 
-Python-uinput2 is Python interface to Linux uinput kernel module which
+Python-uinput is Python interface to Linux uinput kernel module which
 allows attaching userspace device drivers into kernel. In practice,
 Python-uinput makes it dead simple to create virtual joysticks,
 keyboards and mice for generating arbitrary input events
 programmatically.
 
-:Homepage: https://github.com/pyinput/python-uinput2
+:Homepage: https://github.com/pyinput/python-uinput
 :License: GPLv3+
-
-About python-uinput v2
-======================
-
-python-uinput2 is the intended successor to python-uinput.
-We've decided to fork the project after the original author become unresponsive for several years and PRs implementing modern python support were unmerged.
-
-The PyPI project and repository are now python-uinput2, but you should still `import uinput` in your python code.
 
 Usage examples
 ==============
@@ -83,7 +75,7 @@ How to report bugs
 
 The bug database is hosted in GitHub. If you have found a bug or have an
 improvement idea you want to share, please report it at
-<https://github.com/pyinput/python-uinput2/issues>. However, to avoid
+<https://github.com/pyinput/python-uinput/issues>. However, to avoid
 duplicate bug reports, before reporting, please check if similar or identical
 bug has already been reported. If so, you can still subscribe to the existing
 bug to track its progress.
@@ -94,7 +86,7 @@ How to contribute
 In addition to reporting bugs and improvement suggestions, you are encouraged to
 contribute bug-fixes or features. The source code is maintained in Git and the
 main repository is hosted at GitHub,
-<https://github.com/pyinput/python-uinput2/>. The preferred way to
+<https://github.com/pyinput/python-uinput/>. The preferred way to
 contribute code is to clone the main Git repository and send a pull-request. Good
 old patches via email are also accepted.
 
