@@ -3,7 +3,7 @@ name = "python-uinput"
 version = "1.0.0"
 description = "Pythonic API to Linux uinput kernel module."
 authors = [
-    {name = "Tuomas Räsänen"},
+    {name = "pyinput"},
 ]
 license = {text = "GPLv3+"}
 readme = "README"
