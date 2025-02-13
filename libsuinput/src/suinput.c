@@ -45,11 +45,20 @@ int suinput_emit(int uinput_fd, uint16_t ev_type, uint16_t ev_code,
         struct input_event event;
 
         memset(&event, 0, sizeof(event));
-        gettimeofday(&event.time, 0);
         event.type = ev_type;
         event.code = ev_code;
         event.value = ev_value;
 
+/* attempt to deal with 64-bit time keeping on recent 32-bit systems */
+#if (__BITS_PER_LONG != 32 || !defined(__USE_TIME_BITS64))
+	gettimeofday(&event.time, 0);
+#else
+        struct timeval now;
+        memset(&now, 0, sizeof(now));
+        gettimeofday(&now, 0);
+        event.input_event_sec  = now.tv_sec;
+        event.input_event_usec = now.tv_usec;
+#endif
         return suinput_write_event(uinput_fd, &event);
 }
 
