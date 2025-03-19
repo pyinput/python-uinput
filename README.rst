@@ -59,7 +59,7 @@ python-uinput. To load the module, run::
 
     modprobe -i uinput
 
-If you would like to have uinput to be loaded on every sytem boot, add
+If you would like to have uinput to be loaded on every system boot, add
 uinput to ``/etc/modules``.
 
 How to install
