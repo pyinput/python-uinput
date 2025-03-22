@@ -10,7 +10,7 @@ def parse_event_codes(filepath, ev_type, ev_name):
     with open(filepath) as f:
         ev_codes = {}
         for line in f:
-            match = re.match(r"^#define (" + ev_name + "_.*)\t+((?:0x[0-9a-f]+)|(?:\d+))", line)
+            match = re.match(r"^#define (" + ev_name + r"_.*)\t+((?:0x[0-9a-f]+)|(?:\d+))", line)
             if match:
                 ev_id   = match.group(1).strip()
                 ev_code = match.group(2).strip()
@@ -18,7 +18,7 @@ def parse_event_codes(filepath, ev_type, ev_name):
                 print("%s = (%s, %s)" % (ev_id, ev_type, ev_code))
                 continue
 
-            match = re.match(r"^#define (" + ev_name + "_.*)\t+((?:[A-Z_]+))", line)
+            match = re.match(r"^#define (" + ev_name + r"_.*)\t+((?:[A-Z_]+))", line)
             if match:
                 ev_id   = match.group(2).strip()
                 ev_code = ev_codes[ev_id]
