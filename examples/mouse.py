@@ -20,5 +20,9 @@ def main():
             # application, this is of course unnecessary.
             time.sleep(0.01)
 
+        # Emit left mouse click
+        device.emit(uinput.BTN_LEFT, 1) # Button pressed
+        device.emit(uinput.BTN_LEFT, 0) # Button released
+
 if __name__ == "__main__":
     main()
